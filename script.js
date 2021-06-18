@@ -86,13 +86,15 @@ const updateDOM=function(userSelected,computerSelected,results){
     userChoice.innerText='result'
      computerChoice.innerHTML=`computer Choose <strong> ${computerSelected.toUpperCase()}</strong>`;
      userChoice.innerHTML=`You Choose <strong> ${userSelected.toUpperCase()}</strong>`;
-    result.innerText='results';
+    result.innerText=results;
+   
+    gameResultContainer.classList.remove('hidden');
 }
 
 const check=function(input){
      
     const userSelected=input;
-   const choices=['rock','paper','scissor'];
+   const choices=['rock','paper','scissors'];
    const num=Math.trunc(Math.random()*3);
    const computerSelected=choices[num];
   gameLogic(userSelected,computerSelected);
