@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+:root{
+    --text-color:blue;
+    --background-color:red;
+    --white-color:#fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+    background-image:  #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+ color:var( --text-color); 
+    
+}
+main{
+    height: 30rem;
+    width: 35rem;
+    background-color:var(--white-color) ;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 1px 10px rgba(255,255, 255, 0.95);
+    padding: 2rem;
+}
+header{
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+header h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+header p{
+    font-size: 1.2rem;
+}
+.hands{
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+   margin-bottom: 0.5rem;
+}
+.hands button{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    font-size: 5rem;
+    background-color: var(--background-color);
+    color: var(--white-color);
+    border: 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+}
+.hands button:hover{
+    transform: translateY(5px);
+    /* background-color: salmon;
+    color: var( --text-color); */
+}
+.hands button:hover:active{
+    transform: scale(1.1);
+}
+.result button{
+    padding: 0.5rem 1.5rem;
+    background-color: var(--text-color);
+    color: var(--white-color);
+    width: 60%;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+
+}
+.result button:hover{
+    transform: translateY(5px);
+    /* background-color: salmon;
+    color: var( --text-color); */
+}
+.result button:hover:active{
+    transform: scale(1.1);
+}
+.result{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.result p{
+    margin-bottom: 0.5rem;
+}
+.result-message{
+    height: 2rem;
+    background-color: var(--text-color);
+    color: var(--white-color);
+    width: 60%;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.hidden{
+    display: none;
+}
